@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator by shubham</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="media.css">
+</head>
+<body>
+    
+  
+    <div class="container flex">
+        
+        <div class="calculator">
+
+            <form>
+                <div class="screen">
+                    <input type="text" name="display" id="inputnumber" placeholder="0">
+                </div>
+                <div>
+                    <input type="button" value="AC"class="opt"  onclick="clr()">
+                    <input type="button" value="DEL"class="opt"  onclick="del()">
+                    <input type="button" value="%" class="opt" onclick="calculate('%')">
+                    <input type="button" value="/" class="opt" onclick="calculate('/')">
+                </div>
+                <div>
+                    <input type="button" value="7" onclick="calculate(7)">
+                    <input type="button" value="8" onclick="calculate(8)">
+                    <input type="button" value="9" onclick="calculate(9)">
+                    <input type="button" value="*" class="opt" onclick="calculate('*')">
+                </div>
+                <div>
+                    <input type="button" value="4" onclick="calculate(4)">
+                    <input type="button" value="5" onclick="calculate(5)">
+                    <input type="button" value="6" onclick="calculate(6)">
+                    <input type="button" value="+" class="opt" onclick="calculate('+')">
+                </div>
+                <div>
+                    <input type="button" value="1"  onclick="calculate(1)">
+                    <input type="button" value="2" onclick="calculate(2)">
+                    <input type="button" value="3" onclick="calculate(3)">
+                    <input type="button" value="-" class="opt" onclick="calculate('-')">
+                </div>
+                <div>
+                    <input type="button" value="." class="opt" onclick="calculate('.')">
+                    <input type="button" value="0" onclick="calculate(0)">
+                    <input type="button" class="equal"   value="=" onclick="Result()">
+                </div>
+            </form>
+
+        </div>
+    </div>
+
+
+
+
+
+
+
+    <script src="script.js"></script>
+</body>
+</html>
